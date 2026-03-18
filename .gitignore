@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# gradle-wrapper.jar is a binary bootstrap — keep it tracked if present,
+# but CI regenerates it automatically so it's optional in source control.
+# Do NOT add gradle/wrapper/gradle-wrapper.jar to this ignore list.

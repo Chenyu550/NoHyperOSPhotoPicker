@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        LSPosed module manifest.
+        No activities, no services — pure hook module.
+    -->
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:hasCode="true">
+
+        <!-- Marks this APK as an Xposed/LSPosed module -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+
+        <!-- Human-readable description shown in LSPosed Manager -->
+        <meta-data
+            android:name="xposeddescription"
+            android:value="自动拦截并禁用 HyperOS 魔改的图片和文件选择器" />
+
+        <!-- Minimum Xposed API version required -->
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+
+        <!-- LSPosed scope hint (informational; actual scope is set in LSPosed Manager) -->
+        <meta-data
+            android:name="xposedscope"
+            android:value="com.android.photopicker" />
+
+    </application>
+
+</manifest>
