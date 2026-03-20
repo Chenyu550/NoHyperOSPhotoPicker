@@ -19,7 +19,7 @@
         <!-- Human-readable description shown in LSPosed Manager -->
         <meta-data
             android:name="xposeddescription"
-            android:value="自动拦截并禁用 HyperOS 魔改的图片和文件选择器" />
+            android:value="自动拦截并禁用HyperOS的图片/文件选择器（安全访问），使用原生选择器以解决魔改带来的一些问题和功能缺失" />
 
         <!-- Minimum Xposed API version required -->
         <meta-data
@@ -29,7 +29,7 @@
         <!-- LSPosed scope hint (informational; actual scope is set in LSPosed Manager) -->
         <meta-data
             android:name="xposedscope"
-            android:value="com.android.photopicker" />
+            android:value="com.android.photopicker;com.android.fileexplorer" />
 
     </application>
 
